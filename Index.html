@@ -209,8 +209,8 @@
 <div class="petals" id="petals"></div>
 
 <section class="stage active" id="scene-welcome">
-  <div class="eyebrow">For Brenda</div>
-  <h1>Hi Brenda 🤎</h1>
+  <div class="eyebrow">For my baby</div>
+  <h1>Happy Girlfriends Day</h1>
   <p class="lede">It's Girlfriend Day, and I made something small just for you. Ready to see it?</p>
   <div class="btn-row">
     <button class="primary" onclick="go('scene-unlock')">Yes 💖</button>
@@ -249,27 +249,15 @@
     and the last person I want to talk to before I fall asleep.
     <div class="sign">Always yours, Trevor</div>
   </div>
-  <button class="primary" onclick="go('scene-song')">Keep Going 🎵</button>
+  <button class="primary" onclick="go('scene-quiz')">Keep Going</button>
 </section>
 
-<section class="stage" id="scene-song">
-  <div class="eyebrow">Our Soundtrack</div>
-  <h2>Your Favourite Song 😊</h2>
-  <p class="lede">Drop the link to "our song" here and it'll be waiting for her every time she opens this.</p>
-  <div class="song-card">
-    <span class="note">♪</span>
-    <span id="songLabel">Add your song link in the code — search: songLabel</span>
-  </div>
-  <button class="primary" onclick="go('scene-quiz')">One Last Thing 😂</button>
-</section>
 
 <section class="stage" id="scene-quiz">
   <div class="eyebrow">Final Challenge</div>
   <h2>Who's the Cutest?</h2>
   <div class="quiz-options">
-    <button class="ghost" onclick="go('scene-final')">Trevor 😂</button>
-    <button class="ghost" onclick="go('scene-final')">Brenda 🤎</button>
-    <button class="primary" onclick="go('scene-final')">Both, obviously 😂</button>
+    <button class="primary" onclick="go('scene-final')">Brenda</button>
   </div>
 </section>
 
@@ -288,7 +276,7 @@
 <footer class="credit">made with love, just for Brenda</footer>
 
 <script>
-  const scenes = ['scene-welcome','scene-unlock','scene-reasons','scene-letter','scene-song','scene-quiz','scene-final'];
+  const scenes = ['scene-welcome','scene-unlock','scene-reasons','scene-letter','scene-quiz','scene-final'];
   function go(id){
     scenes.forEach(s => document.getElementById(s).classList.remove('active'));
     document.getElementById(id).classList.add('active');
